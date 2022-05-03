@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        [class*="col-"] {
+            outline: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    
+    <i class="fa-solid fa-circle-check"></i>
+    <div class="it-modal">
+        <div class="header">
+            <h2 class="title">Titulo</h2>
+            <button class="close">X</button>
+        </div>
+        <div class="body producto en-oferta" >
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum inventore eius nulla qui sequi, placeat atque ipsam debitis sit maiores.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum inventore eius nulla qui sequi, placeat atque ipsam debitis sit maiores.</p>
+        </div>
+        <div class="footer">
+            <button class="btn cancel">Cancelar</button>
+            <button class="btn ok">OK</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">COL-6</div>
+            <div class="col-6">COL-6</div>
+            <div class="col-4">COL-4</div>
+            <div class="col-4">
+                <div class="alerta alerta--exito alerta--xs">Mensaje</div>
+            </div> 
+            <div class="col-4">
+                <div class="alerta alerta--error alerta--xl alerta--block">Mensaje</div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6">COL-6</div>
+                    <div class="col-6">COL-6</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="alerta alerta--exito alerta--block">Mensaje</div>
+    <div class="alerta alerta--error alerta--block">Mensaje</div>
+
+</body>
+</html>

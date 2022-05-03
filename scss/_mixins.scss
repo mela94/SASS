@@ -1,0 +1,19 @@
+@mixin crear-grid($columnas) {
+    @for $i from 1 through $columnas {
+        .col-#{$i} {
+            box-sizing: border-box;
+            width: calc($i * 100% / $columnas);
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}
+
+@mixin get-icon($unicode) {
+    &::before {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        content: $unicode;
+        margin-right: 10px;
+    }
+}

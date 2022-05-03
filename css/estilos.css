@@ -1,0 +1,241 @@
+.it-modal {
+  position: fixed;
+  top: 200px;
+  left: calc(50% - 200px);
+  width: 400px;
+  border: 1px solid black;
+  box-shadow: 0 0 5px black;
+}
+.it-modal .header {
+  padding: 20px 20px 0;
+}
+.it-modal .close {
+  position: absolute;
+  border: none;
+  background-color: orange;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+}
+.it-modal .close:hover {
+  background-color: black;
+  color: orange;
+}
+.it-modal .body {
+  padding: 0 20px;
+}
+.it-modal .footer {
+  text-align: right;
+  padding: 20px;
+}
+.it-modal .btn {
+  border: 1px solid black;
+  height: 30px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.it-modal .btn.cancel {
+  background-color: red;
+  color: white;
+}
+.it-modal .btn.cancel:hover {
+  background-color: rgb(136, 0, 0);
+}
+.it-modal .btn.ok {
+  background-color: rgb(110, 249, 110);
+}
+.it-modal .btn.ok:hover {
+  background-color: rgb(4, 99, 4);
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col-1 {
+  box-sizing: border-box;
+  width: 8.3333333333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-2 {
+  box-sizing: border-box;
+  width: 16.6666666667%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-3 {
+  box-sizing: border-box;
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-4 {
+  box-sizing: border-box;
+  width: 33.3333333333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-5 {
+  box-sizing: border-box;
+  width: 41.6666666667%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-6 {
+  box-sizing: border-box;
+  width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-7 {
+  box-sizing: border-box;
+  width: 58.3333333333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-8 {
+  box-sizing: border-box;
+  width: 66.6666666667%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-9 {
+  box-sizing: border-box;
+  width: 75%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-10 {
+  box-sizing: border-box;
+  width: 83.3333333333%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-11 {
+  box-sizing: border-box;
+  width: 91.6666666667%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-12 {
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.alerta {
+  border: 2px solid black;
+  border-radius: 6px;
+  margin: 16px 0;
+  padding: 8px;
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+}
+.alerta--error {
+  background-color: red;
+  border-color: pink;
+  color: white;
+}
+.alerta--error::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f057";
+  margin-right: 10px;
+}
+.alerta--exito {
+  background-color: green;
+  border-color: rgb(0, 247, 0);
+  color: white;
+}
+.alerta--exito::before {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f058";
+  margin-right: 10px;
+}
+.alerta--xs {
+  font-size: 10px;
+}
+.alerta--xl {
+  font-size: 24px;
+}
+.alerta--block {
+  display: block;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+  color: red;
+}
+
+.caja-4:hover, .caja-3:hover {
+  background-color: black;
+  color: white;
+}
+
+.caja, .caja-especial {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.caja-especial {
+  box-shadow: 0 0 5px black;
+}
+
+.caja-1 {
+  width: 200px;
+}
+.caja-1:hover {
+  background-color: black;
+  color: white;
+}
+
+.caja-2 {
+  width: 200px;
+}
+.caja-2:hover {
+  background-color: black;
+  color: white;
+}
+
+.caja-3 {
+  width: 200px;
+}
+
+.caja-4 {
+  width: 200px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

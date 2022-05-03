@@ -1,0 +1,71 @@
+@use 'variables' as var;
+
+.it-modal {
+    position: fixed;
+    top: 200px;
+    left: calc(50% - 200px);
+    width: 400px;
+    border: 1px solid black;
+    box-shadow: var.$modal-shadow-x var.$modal-shadow-y var.$modal-shadow-blur var.$modal-shadow-color;
+
+    .header {
+       padding: 20px 20px 0; 
+    }
+
+    .title {
+        
+    }
+
+    .close {
+        position: absolute;
+        border: none;
+        background-color: orange;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        top: -10px;
+        right: -10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: black;
+            color: orange;
+        }
+    }
+
+    .body {
+        padding: 0 20px;
+    }
+
+    .footer {
+        text-align: right;
+        padding: 20px;
+    }
+
+    .btn {
+        border: 1px solid black;
+        height: 30px;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+
+        &.cancel {
+            background-color: red;
+            color: white;
+
+            &:hover {
+                background-color: rgb(136, 0, 0);
+            }
+        }
+    
+        &.ok {
+            background-color: rgb(110, 249, 110);
+
+            &:hover {
+                background-color: rgb(4, 99, 4);
+            }
+        }
+    }
+
+    
+}

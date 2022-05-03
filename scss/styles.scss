@@ -1,0 +1,79 @@
+// @import 'variables'
+@use 'variables' as var;
+@use 'modal';
+@use 'grid';
+@use 'alerta';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    // background-color: variables.$body-background;
+    background-color: var.$body-background;
+    color: var.$body-color;
+}
+
+@mixin caja () {
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+%caja {
+    &:hover {
+        background-color: black;
+        color: white;
+    } 
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.caja-especial {
+    @extend .caja;
+    box-shadow: 0 0 5px black;
+}
+
+.caja-1 {
+    width: 200px;
+    @include caja();
+}
+
+.caja-2 {
+    width: 200px;
+    @include caja();
+}
+
+.caja-3 {
+    width: 200px;
+    @extend %caja;
+}
+
+.caja-4 {
+    width: 200px;
+    @extend %caja;
+}
+
+
+// .caja {
+//     background-color: pink;
+
+//     .title {
+//         font-size: 24px;
+
+//         &:hover {
+//             background-color: orange;
+//         }
+//     }
+
+//     .btn {
+//         width: 150px;
+//         line-height: 40px;
+//     }
+// }
